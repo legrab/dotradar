@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DotRadar.Analyzer.Core\DotRadar.Analyzer.Core.csproj"/>
+    <ProjectReference Include="..\DotRadar.Common.Utils\DotRadar.Common.Utils.csproj"/>
+    <ProjectReference Include="..\DotRadar.Repository.Core\DotRadar.Repository.Core.csproj"/>
+  </ItemGroup>
+
+</Project>

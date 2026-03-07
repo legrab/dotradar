@@ -1,0 +1,47 @@
+﻿@using DotRadar.Analyzer.Common
+@using DotRadar.Analyzer.Common.Interfaces
+@using DotRadar.Repository.Common.Enums
+@using DotRadar.Repository.Common.Interfaces
+@inject IRepositoryFactory RepositoryFactory
+@inject IAnalyzerFactory AnalyzerFactory
+
+<Markup Content="@($"Repository Path: {RepositoryPath}")" Foreground="@Color.Blue"/>
+<Newline/>
+<Markup Content="@($"Source: {Source}")" Foreground="@Color.Green"/>
+
+@foreach (var result in Results)
+{
+    <AnalyzationResultCard Result="result"/>
+}
+
+@code {
+    private IEnumerable<AnalyzationResult> Results { get; set; } = [];
+
+    private const string RepositoryPath = @"C:\Path\To\Your\Repository";
+    private const RepositorySource Source = RepositorySource.LocalDirectory;
+
+    protected override void OnInitialized()
+    {
+        Init();
+
+        base.OnInitialized();
+    }
+
+    private void Init()
+    {
+        try
+        {
+            var repository = RepositoryFactory.CreateRepository(Source).GetValueOrThrow();
+
+            var analyzers = AnalyzerFactory.CreateAnalyzers().GetValueOrThrow();
+
+            Results = analyzers.Select(analyzer => analyzer.Analyze(repository));
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"An error occurred: {ex.Message}");
+            throw;
+        }
+    }
+
+}

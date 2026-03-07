@@ -1,0 +1,41 @@
+<Solution>
+    <Folder Name="/Common/">
+        <Project Path="src/DotRadar.Common.Plugins/DotRadar.Common.Plugins.csproj"/>
+        <Project Path="src/DotRadar.Common.Reflection/DotRadar.Common.Reflection.csproj"/>
+        <Project Path="src/DotRadar.Common.Results/DotRadar.Common.Results.csproj"/>
+        <Project Path="src/DotRadar.Common.Utils/DotRadar.Common.Utils.csproj"/>
+    </Folder>
+    <Folder Name="/Engine/">
+        <Project Path="src/DotRadar.Analyzer.Common/DotRadar.Analyzer.Common.csproj"/>
+        <Project Path="src/DotRadar.Analyzer.Core/DotRadar.Analyzer.Core.csproj"/>
+    </Folder>
+    <Folder Name="/Engine/Analyzers/">
+        <Project Path="src/DotRadar.Analyzer.Size/DotRadar.Analyzer.Size.csproj"/>
+        <Project Path="src/DotRadar.Analyzer.TestCoverage/DotRadar.Analyzer.TestCoverage.csproj"/>
+        <Project Path="src/DotRadar.Analyzer.Solid/DotRadar.Analyzer.Solid.csproj"/>
+    </Folder>
+    <Folder Name="/Infrastructure/">
+        <Project Path="src/DotRadar.Repository.Common/DotRadar.Repository.Common.csproj"/>
+        <Project Path="src/DotRadar.Repository.Core/DotRadar.Repository.Core.csproj"/>
+    </Folder>
+    <Folder Name="/Infrastructure/Repositories/">
+        <Project Path="src/DotRadar.Repository.GitHub/DotRadar.Repository.GitHub.csproj"/>
+        <Project Path="src/DotRadar.Repository.LocalDirectory/DotRadar.Repository.LocalDirectory.csproj"/>
+    </Folder>
+    <Folder Name="/Solution Items/">
+        <File Path=".editorconfig"/>
+        <File Path=".gitattributes"/>
+        <File Path=".gitignore"/>
+        <File Path="ABOUT.md"/>
+        <File Path="Directory.Build.props"/>
+        <File Path="Directory.Packages.props"/>
+        <File Path="global.json"/>
+        <File Path="LICENSE"/>
+        <File Path="nuget.config"/>
+        <File Path="README.md"/>
+        <File Path="THIRD_PARTY_NOTICES.md"/>
+    </Folder>
+    <Folder Name="/Tests/"/>
+    <Project Path="src/DotRadar.Cli/DotRadar.Cli.csproj"/>
+    <Project Path="src/DotRadar.Core/DotRadar.Core.csproj"/>
+</Solution>

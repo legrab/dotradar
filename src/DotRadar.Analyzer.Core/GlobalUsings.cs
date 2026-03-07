@@ -1,0 +1,11 @@
+global using System;
+global using System.Collections.Generic;
+global using System.Diagnostics.CodeAnalysis;
+global using System.Linq;
+global using DotRadar.Analyzer.Common.Enums;
+global using DotRadar.Analyzer.Common.Interfaces;
+global using DotRadar.Common.Results;
+global using DotRadar.Common.Results.Exceptions;
+global using DotRadar.Common.Utils;
+global using DotRadar.Repository.Common.Interfaces;
+global using Microsoft.Extensions.Configuration;
