@@ -1,0 +1,62 @@
+﻿@using DotRadar.Analyzer.Common
+<Columns>
+    <div>
+        <Markup Content="Status: " Foreground="@Color.Blue"/>
+        <Markup Content="@Result.Status.ToString()" Foreground="@Color.White"/>
+    </div>
+    @if (Result.Value is not null)
+    {
+        <div>
+            <Markup Content="Value: " Foreground="@Color.Blue"/>
+            <Markup Content="@Result.Value.ToString()" Foreground="@Color.Green"/>
+        </div>
+    }
+    @if (Result.Error is not null)
+    {
+        <div>
+            <Markup Content="Error: " Foreground="@Color.Red"/>
+            <Markup Content="@Result.Error.Message" Foreground="@Color.Red"/>
+        </div>
+    }
+</Columns>
+
+@if (Result.Properties.Severity.NotNullOrEmpty())
+{
+    <div>
+        <Markup Content="Severity: " Foreground="@Color.Yellow"/>
+        <Markup Content="@Result.Properties.Severity" Foreground="@Color.White"/>
+    </div>
+}
+@if (Result.Properties.Category.NotNullOrEmpty())
+{
+    <div>
+        <Markup Content="Category: " Foreground="@Color.Yellow"/>
+        <Markup Content="@Result.Properties.Category" Foreground="@Color.White"/>
+    </div>
+}
+@if (Result.Properties.Message.NotNullOrEmpty())
+{
+    <div>
+        <Markup Content="Message: " Foreground="@Color.Yellow"/>
+        <Markup Content="@Result.Properties.Message" Foreground="@Color.White"/>
+    </div>
+}
+@if (Result.Properties.Details.NotNullOrEmpty())
+{
+    <div>
+        <Markup Content="Details: " Foreground="@Color.Yellow"/>
+        <Markup Content="@Result.Properties.Details" Foreground="@Color.White"/>
+    </div>
+}
+@foreach (var kv in Result.Properties.AdditionalProperties)
+{
+    <div>
+        <Markup Content="@($"{kv.Key}:")" Foreground="@Color.Cyan"/>
+        <Markup Content="@kv.Value.ToString()" Foreground="@Color.White"/>
+    </div>
+}
+
+
+@code {
+    [Parameter] [EditorRequired] public required AnalyzationResult Result { get; set; }
+}

@@ -221,6 +221,8 @@ PublishScripts/
 # NuGet v3's project.json files produces more ignorable files
 *.nuget.props
 *.nuget.targets
+# Enable local packages explicitly
+!libs/**/*.nupkg
 
 # Microsoft Azure Build Output
 csx/
@@ -317,10 +319,6 @@ node_modules/
 *.dsw
 *.dsp
 
-# Visual Studio 6 technical files
-*.ncb
-*.aps
-
 # Visual Studio LightSwitch build output
 **/*.HTMLClient/GeneratedArtifacts
 **/*.DesktopClient/GeneratedArtifacts
@@ -416,3 +414,19 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# JetBrains Rider
+*.sln.iml
+.idea/*
+
+# SQLite database files
+*.db
+*.db-shm
+*.db-wal
+
+# Prebuilt libraries of registered modules
+analyzers/
+repositories/
+
+# Prebuilt executables
+build/

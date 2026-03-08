@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="DotRadar.Analyzer.Core"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DotRadar.Common.Reflection\DotRadar.Common.Reflection.csproj"/>
+    <ProjectReference Include="..\DotRadar.Common.Results\DotRadar.Common.Results.csproj"/>
+    <ProjectReference Include="..\DotRadar.Repository.Common\DotRadar.Repository.Common.csproj"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations"/>
+  </ItemGroup>
+</Project>
