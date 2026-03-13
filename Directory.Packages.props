@@ -3,20 +3,20 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup Label="Standard">
-    <PackageVersion Include="Microsoft.Extensions.Configuration" Version="10.0.3"/>
+    <PackageVersion Include="Microsoft.Extensions.Configuration" Version="10.0.5"/>
     <PackageVersion Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.3"/>
     <PackageVersion Include="Microsoft.Extensions.Configuration.Binder" Version="10.0.3"/>
-    <PackageVersion Include="Microsoft.Extensions.Configuration.CommandLine" Version="10.0.3"/>
-    <PackageVersion Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="10.0.3"/>
-    <PackageVersion Include="Microsoft.Extensions.Configuration.FileExtensions" Version="10.0.3"/>
-    <PackageVersion Include="Microsoft.Extensions.Configuration.Json" Version="10.0.3"/>
-    <PackageVersion Include="Microsoft.Extensions.Configuration.UserSecrets" Version="10.0.3"/>
-    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="10.0.3"/>
-    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.3"/>
+    <PackageVersion Include="Microsoft.Extensions.Configuration.CommandLine" Version="10.0.5"/>
+    <PackageVersion Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="10.0.5"/>
+    <PackageVersion Include="Microsoft.Extensions.Configuration.FileExtensions" Version="10.0.5"/>
+    <PackageVersion Include="Microsoft.Extensions.Configuration.Json" Version="10.0.5"/>
+    <PackageVersion Include="Microsoft.Extensions.Configuration.UserSecrets" Version="10.0.5"/>
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="10.0.5"/>
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.5"/>
     <PackageVersion Include="Microsoft.Extensions.Localization" Version="10.0.3"/>
     <PackageVersion Include="Microsoft.Extensions.Localization.Abstractions" Version="10.0.3"/>
-    <PackageVersion Include="Microsoft.Extensions.Options" Version="10.0.3"/>
-    <PackageVersion Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.3"/>
+    <PackageVersion Include="Microsoft.Extensions.Options" Version="10.0.5"/>
+    <PackageVersion Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.5"/>
     <PackageVersion Include="RazorConsole.Core" Version="0.4.0"/>
   </ItemGroup>
   <ItemGroup Label="Meta">
