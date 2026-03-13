@@ -17,5 +17,6 @@
 
   <ItemGroup>
     <PackageReference Include="JetBrains.Annotations"/>
+    <PackageReference Include="Microsoft.Extensions.Configuration" VersionOverride="10.0.5" />
   </ItemGroup>
 </Project>
