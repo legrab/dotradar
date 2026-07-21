@@ -21,7 +21,7 @@
   </ItemGroup>
   <ItemGroup Label="Meta">
     <PackageVersion Include="GitVersion.MsBuild" Version="6.6.0"/>
-    <PackageVersion Include="JetBrains.Annotations" Version="2025.2.4"/>
+    <PackageVersion Include="JetBrains.Annotations" Version="2026.2.0"/>
     <PackageVersion Include="System.Management" Version="10.0.3"/>
   </ItemGroup>
   <ItemGroup Label="Infra">
