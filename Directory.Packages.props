@@ -17,7 +17,7 @@
     <PackageVersion Include="Microsoft.Extensions.Localization.Abstractions" Version="10.0.3"/>
     <PackageVersion Include="Microsoft.Extensions.Options" Version="10.0.14"/>
     <PackageVersion Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.14"/>
-    <PackageVersion Include="RazorConsole.Core" Version="0.6.0"/>
+    <PackageVersion Include="RazorConsole.Core" Version="0.7.0"/>
   </ItemGroup>
   <ItemGroup Label="Meta">
     <PackageVersion Include="GitVersion.MsBuild" Version="6.6.0"/>
